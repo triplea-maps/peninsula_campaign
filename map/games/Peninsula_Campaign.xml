@@ -1,0 +1,741 @@
+<?xml version="1.0"?>
+<!DOCTYPE game SYSTEM "game.dtd">
+<game>
+  <info name="Peninsula_Campaign" version="1.1"/>
+  <loader javaClass="games.strategy.triplea.TripleA"/>
+  <map>
+    <!-- Territory Definitions -->
+    <territory name="City Point Harbor"/>
+    <territory name="Hanover Roads"/>
+    <territory name="Richmond Church Hill"/>
+    <territory name="Lynchburg RR"/>
+    <territory name="Hesterfield Church"/>
+    <territory name="Fort Darling"/>
+    <territory name="Petersburg"/>
+    <territory name="Winstons Mill"/>
+    <territory name="Swift Run"/>
+    <territory name="Kinglands Creek"/>
+    <territory name="Hanover RR"/>
+    <territory name="Amherst"/>
+    <territory name="Blunts Bridge"/>
+    <territory name="Walnut Grove"/>
+    <territory name="Bottoms Bridge"/>
+    <territory name="Cumberland"/>
+    <territory name="Lynchburg Fields"/>
+    <territory name="Chickahominy River"/>
+    <territory name="Richmond RR"/>
+    <territory name="Farmsville"/>
+    <territory name="Nine Mile Road"/>
+    <territory name="Lynchburg"/>
+    <territory name="Cendar Farm Bridge"/>
+    <territory name="Appomattox Town"/>
+    <territory name="James River Ferry"/>
+    <territory name="Anna River"/>
+    <territory name="Petersburg RR"/>
+    <territory name="James River"/>
+    <territory name="Hanover"/>
+    <territory name="Stag Creek"/>
+    <territory name="Richmond"/>
+    <territory name="Hungary"/>
+    <territory name="Three Notched Road"/>
+    <territory name="Fair Oak"/>
+    <territory name="Oakland"/>
+    <territory name="Huskins"/>
+    <territory name="Ashland"/>
+    <territory name="Tomahawk Station"/>
+    <territory name="Appomattox River"/>
+    <territory name="Manchester"/>
+    <territory name="Salem Church"/>
+    <territory name="Putney Ferry"/>
+    <territory name="Rose Garden"/>
+    <territory name="Queens Creek"/>
+    <territory name="Gaines Mill"/>
+    <territory name="White House RR"/>
+    <territory name="White House"/>
+    <territory name="Tunstall Station"/>
+    <!-- Territory Connections -->
+    <connection t1="Hanover Roads" t2="Huskins"/>
+    <connection t1="Hanover Roads" t2="Walnut Grove"/>
+    <connection t1="Richmond Church Hill" t2="Manchester"/>
+    <connection t1="Richmond Church Hill" t2="Richmond RR"/>
+    <connection t1="Richmond Church Hill" t2="Richmond"/>
+    <connection t1="Lynchburg RR" t2="Richmond RR"/>
+    <connection t1="Lynchburg RR" t2="Lynchburg"/>
+    <connection t1="Lynchburg RR" t2="Amherst"/>
+    <connection t1="Lynchburg RR" t2="James River"/>
+    <connection t1="Lynchburg RR" t2="Hungary"/>
+    <connection t1="Lynchburg RR" t2="Lynchburg Fields"/>
+    <connection t1="Lynchburg RR" t2="Appomattox Town"/>
+    <connection t1="Lynchburg RR" t2="Tomahawk Station"/>
+    <connection t1="Lynchburg RR" t2="James River Ferry"/>
+    <connection t1="Hesterfield Church" t2="James River Ferry"/>
+    <connection t1="Hesterfield Church" t2="Tomahawk Station"/>
+    <connection t1="Fort Darling" t2="Hesterfield Church"/>
+    <connection t1="Fort Darling" t2="Kinglands Creek"/>
+    <connection t1="Petersburg" t2="Swift Run"/>
+    <connection t1="Petersburg" t2="City Point Harbor"/>
+    <connection t1="Petersburg" t2="Cumberland"/>
+    <connection t1="Petersburg" t2="Farmsville"/>
+    <connection t1="Winstons Mill" t2="Anna River"/>
+    <connection t1="Winstons Mill" t2="Blunts Bridge"/>
+    <connection t1="Swift Run" t2="Hesterfield Church"/>
+    <connection t1="Swift Run" t2="Cumberland"/>
+    <connection t1="Swift Run" t2="Tomahawk Station"/>
+    <connection t1="Kinglands Creek" t2="Appomattox River"/>
+    <connection t1="Kinglands Creek" t2="Swift Run"/>
+    <connection t1="Kinglands Creek" t2="Hesterfield Church"/>
+    <connection t1="Hanover RR" t2="Richmond RR"/>
+    <connection t1="Hanover RR" t2="Hanover"/>
+    <connection t1="Hanover RR" t2="Winstons Mill"/>
+    <connection t1="Hanover RR" t2="Anna River"/>
+    <connection t1="Hanover RR" t2="Huskins"/>
+    <connection t1="Hanover RR" t2="Walnut Grove"/>
+    <connection t1="Amherst" t2="Three Notched Road"/>
+    <connection t1="Amherst" t2="James River"/>
+    <connection t1="Blunts Bridge" t2="Anna River"/>
+    <connection t1="Blunts Bridge" t2="Stag Creek"/>
+    <connection t1="Walnut Grove" t2="Huskins"/>
+    <connection t1="Walnut Grove" t2="Anna River"/>
+    <connection t1="Bottoms Bridge" t2="Chickahominy River"/>
+    <connection t1="Bottoms Bridge" t2="Nine Mile Road"/>
+    <connection t1="Cumberland" t2="Appomattox Town"/>
+    <connection t1="Cumberland" t2="Farmsville"/>
+    <connection t1="Lynchburg Fields" t2="Lynchburg"/>
+    <connection t1="Lynchburg Fields" t2="Amherst"/>
+    <connection t1="Chickahominy River" t2="Nine Mile Road"/>
+    <connection t1="Chickahominy River" t2="Richmond Church Hill"/>
+    <connection t1="Chickahominy River" t2="Gaines Mill"/>
+    <connection t1="Chickahominy River" t2="Fair Oak"/>
+    <connection t1="Richmond RR" t2="Manchester"/>
+    <connection t1="Fort Darling" t2="Manchester"/>
+    <connection t1="Richmond RR" t2="James River Ferry"/>
+    <connection t1="Richmond RR" t2="Richmond"/>
+    <connection t1="Richmond RR" t2="Anna River"/>
+    <connection t1="Richmond RR" t2="Ashland"/>
+    <connection t1="Richmond RR" t2="Fair Oak"/>
+    <connection t1="Farmsville" t2="Appomattox Town"/>
+    <connection t1="Farmsville" t2="Lynchburg Fields"/>
+    <connection t1="Nine Mile Road" t2="Richmond Church Hill"/>
+    <connection t1="Nine Mile Road" t2="Manchester"/>
+    <connection t1="Nine Mile Road" t2="Fort Darling"/>
+    <connection t1="Lynchburg" t2="Amherst"/>
+    <connection t1="Lynchburg" t2="Three Notched Road"/>
+    <connection t1="Cendar Farm Bridge" t2="Hanover"/>
+    <connection t1="Appomattox Town" t2="Lynchburg Fields"/>
+    <connection t1="Appomattox Town" t2="James River"/>
+    <connection t1="Appomattox Town" t2="Amherst"/>
+    <connection t1="James River Ferry" t2="Tomahawk Station"/>
+    <connection t1="James River Ferry" t2="James River"/>
+    <connection t1="James River Ferry" t2="Hungary"/>
+    <connection t1="Anna River" t2="Stag Creek"/>
+    <connection t1="Anna River" t2="Ashland"/>
+    <connection t1="Petersburg RR" t2="Richmond RR"/>
+    <connection t1="Petersburg RR" t2="Petersburg"/>
+    <connection t1="Petersburg RR" t2="Swift Run"/>
+    <connection t1="Petersburg RR" t2="Hesterfield Church"/>
+    <connection t1="Petersburg RR" t2="Appomattox River"/>
+    <connection t1="Petersburg RR" t2="Kinglands Creek"/>
+    <connection t1="Petersburg RR" t2="Fort Darling"/>
+    <connection t1="Petersburg RR" t2="Manchester"/>
+    <connection t1="Hanover" t2="Winstons Mill"/>
+    <connection t1="Stag Creek" t2="Ashland"/>
+    <connection t1="Hungary" t2="Richmond"/>
+    <connection t1="Hungary" t2="Ashland"/>
+    <connection t1="Hungary" t2="James River"/>
+    <connection t1="Three Notched Road" t2="James River"/>
+    <connection t1="Three Notched Road" t2="Oakland"/>
+    <connection t1="Three Notched Road" t2="Stag Creek"/>
+    <connection t1="Fair Oak" t2="Walnut Grove"/>
+    <connection t1="Fair Oak" t2="Richmond"/>
+    <connection t1="Fair Oak" t2="Richmond Church Hill"/>
+    <connection t1="Fair Oak" t2="Anna River"/>
+    <connection t1="Fair Oak" t2="Ashland"/>
+    <connection t1="Oakland" t2="Stag Creek"/>
+    <connection t1="Oakland" t2="Ashland"/>
+    <connection t1="Oakland" t2="Hungary"/>
+    <connection t1="Oakland" t2="James River"/>
+    <connection t1="Huskins" t2="Anna River"/>
+    <connection t1="Huskins" t2="Hanover"/>
+    <connection t1="Huskins" t2="Winstons Mill"/>
+    <connection t1="Ashland" t2="Richmond"/>
+    <connection t1="Tomahawk Station" t2="James River"/>
+    <connection t1="Tomahawk Station" t2="Cumberland"/>
+    <connection t1="Tomahawk Station" t2="Appomattox Town"/>
+    <connection t1="Appomattox River" t2="Swift Run"/>
+    <connection t1="Appomattox River" t2="Petersburg"/>
+    <connection t1="Appomattox River" t2="City Point Harbor"/>
+    <connection t1="Manchester" t2="Richmond"/>
+    <connection t1="Manchester" t2="Hesterfield Church"/>
+    <connection t1="Manchester" t2="James River Ferry"/>
+    <connection t1="Salem Church" t2="Hanover"/>
+    <connection t1="Salem Church" t2="Cendar Farm Bridge"/>
+    <connection t1="Salem Church" t2="Huskins"/>
+    <connection t1="Salem Church" t2="Hanover Roads"/>
+    <connection t1="Putney Ferry" t2="Gaines Mill"/>
+    <connection t1="Putney Ferry" t2="Queens Creek"/>
+    <connection t1="Putney Ferry" t2="Hanover Roads"/>
+    <connection t1="Rose Garden" t2="Tunstall Station"/>
+    <connection t1="Rose Garden" t2="Bottoms Bridge"/>
+    <connection t1="Queens Creek" t2="Hanover Roads"/>
+    <connection t1="Queens Creek" t2="Salem Church"/>
+    <connection t1="Gaines Mill" t2="Fair Oak"/>
+    <connection t1="Gaines Mill" t2="Hanover Roads"/>
+    <connection t1="Gaines Mill" t2="Walnut Grove"/>
+    <connection t1="White House RR" t2="Richmond RR"/>
+    <connection t1="White House RR" t2="White House"/>
+    <connection t1="White House RR" t2="Tunstall Station"/>
+    <connection t1="White House RR" t2="Chickahominy River"/>
+    <connection t1="White House RR" t2="Fair Oak"/>
+    <connection t1="White House RR" t2="Rose Garden"/>
+    <connection t1="White House RR" t2="Bottoms Bridge"/>
+    <connection t1="White House RR" t2="Richmond Church Hill"/>
+    <connection t1="White House RR" t2="Nine Mile Road"/>
+    <connection t1="White House" t2="Queens Creek"/>
+    <connection t1="White House" t2="Rose Garden"/>
+    <connection t1="White House" t2="Tunstall Station"/>
+    <connection t1="White House" t2="Putney Ferry"/>
+    <connection t1="Tunstall Station" t2="Chickahominy River"/>
+    <connection t1="Tunstall Station" t2="Gaines Mill"/>
+    <connection t1="Tunstall Station" t2="Putney Ferry"/>
+  </map>
+  <resourceList>
+    <resource name="PUs"/>
+  </resourceList>
+  <playerList>
+    <!-- In turn order -->
+    <player name="Confederacy" optional="false"/>
+    <player name="Union" optional="false"/>
+    <alliance player="Confederacy" alliance="Axis"/>
+    <alliance player="Union" alliance="Allies"/>
+  </playerList>
+  <unitList>
+    <unit name="Infantry"/>
+    <unit name="EliteInfantry"/>
+    <unit name="Cavalry"/>
+    <unit name="EliteCavalry"/>
+    <unit name="Officer"/>
+    <unit name="General"/>
+    <unit name="Artillery"/>
+    <unit name="Mortar"/>
+    <unit name="Factory"/>
+    <unit name="GatlingGun"/>
+    <unit name="Steamtrain"/>
+    <unit name="Supply"/>
+  </unitList>
+  <gamePlay>
+    <delegate name="initDelegate" javaClass="games.strategy.triplea.delegate.InitializationDelegate" display="Initializing Delegates"/>
+    <delegate name="tech" javaClass="games.strategy.triplea.delegate.TechnologyDelegate" display="Research Technology"/>
+    <delegate name="tech_activation" javaClass="games.strategy.triplea.delegate.TechActivationDelegate" display="Activate Technology"/>
+    <delegate name="battle" javaClass="games.strategy.triplea.delegate.BattleDelegate" display="Combat"/>
+    <delegate name="move" javaClass="games.strategy.triplea.delegate.MoveDelegate" display="Combat Move"/>
+    <delegate name="place" javaClass="games.strategy.triplea.delegate.PlaceDelegate" display="Place Units"/>
+    <delegate name="purchase" javaClass="games.strategy.triplea.delegate.PurchaseDelegate" display="Purchase Units"/>
+    <delegate name="endTurn" javaClass="games.strategy.triplea.delegate.EndTurnDelegate" display="Turn Complete"/>
+    <delegate name="placeBid" javaClass="games.strategy.triplea.delegate.BidPlaceDelegate" display="Bid Placement"/>
+    <delegate name="bid" javaClass="games.strategy.triplea.delegate.BidPurchaseDelegate" display="Bid Purchase"/>
+    <delegate name="endRound" javaClass="games.strategy.triplea.delegate.EndRoundDelegate" display="Round Complete"/>
+    <sequence>
+      <step name="gameInitDelegate" delegate="initDelegate" maxRunCount="1"/>
+      <step name="UnionBid" delegate="bid" player="Union" maxRunCount="1"/>
+      <step name="UnionBidPlace" delegate="placeBid" player="Union" maxRunCount="1"/>
+      <step name="ConfederacyBid" delegate="bid" player="Confederacy" maxRunCount="1"/>
+      <step name="ConfederacyBidPlace" delegate="placeBid" player="Confederacy" maxRunCount="1"/>
+      <!--                        <step name="ConfederacyTech" delegate="tech" player="Confederacy" display="Non Combat Move"/>
+                        <step name="ConfederacyTechActivation" delegate="tech_activation" player="Confederacy" display="Non Combat Move"/>-->
+      <step name="ConfederacyPurchase" delegate="purchase" player="Confederacy" display="Non Combat Move"/>
+      <step name="ConfederacyCombatMove" delegate="move" player="Confederacy" display="Non Combat Move"/>
+      <step name="ConfederacyBattle" delegate="battle" player="Confederacy" display="Non Combat Move"/>
+      <step name="ConfederacyNonCombatMove" delegate="move" player="Confederacy" display="Non Combat Move"/>
+      <step name="ConfederacyPlace" delegate="place" player="Confederacy" display="Non Combat Move"/>
+      <step name="ConfederacyEndTurn" delegate="endTurn" player="Confederacy" display="Non Combat Move"/>
+      <step name="UnionPurchase" delegate="purchase" player="Union" display="Non Combat Move"/>
+      <step name="UnionCombatMove" delegate="move" player="Union" display="Non Combat Move"/>
+      <step name="UnionBattle" delegate="battle" player="Union" display="Non Combat Move"/>
+      <step name="UnionNonCombatMove" delegate="move" player="Union" display="Non Combat Move"/>
+      <step name="UnionPlace" delegate="place" player="Union" display="Non Combat Move"/>
+      <step name="UnionEndTurn" delegate="endTurn" player="Union" display="Non Combat Move"/>
+      <step name="endRoundStep" delegate="endRound"/>
+    </sequence>
+  </gamePlay>
+  <production>
+    <!-- Unit Production Cost -->
+    <productionRule name="buyInfantry">
+      <cost resource="PUs" quantity="3"/>
+      <result resourceOrUnit="Infantry" quantity="1"/>
+    </productionRule>
+    <productionRule name="buyEliteInfantry">
+      <cost resource="PUs" quantity="5"/>
+      <result resourceOrUnit="EliteInfantry" quantity="1"/>
+    </productionRule>
+    <productionRule name="buyCavalry">
+      <cost resource="PUs" quantity="3"/>
+      <result resourceOrUnit="Cavalry" quantity="1"/>
+    </productionRule>
+    <productionRule name="buyEliteCavalry">
+      <cost resource="PUs" quantity="5"/>
+      <result resourceOrUnit="EliteCavalry" quantity="1"/>
+    </productionRule>
+    <productionRule name="buyOfficer">
+      <cost resource="PUs" quantity="5"/>
+      <result resourceOrUnit="Officer" quantity="1"/>
+    </productionRule>
+    <productionRule name="buyGeneral">
+      <cost resource="PUs" quantity="7"/>
+      <result resourceOrUnit="General" quantity="1"/>
+    </productionRule>
+    <productionRule name="buyArtillery">
+      <cost resource="PUs" quantity="4"/>
+      <result resourceOrUnit="Artillery" quantity="1"/>
+    </productionRule>
+    <productionRule name="buyMortar">
+      <cost resource="PUs" quantity="6"/>
+      <result resourceOrUnit="Mortar" quantity="1"/>
+    </productionRule>
+    <productionRule name="buyGatlingGun">
+      <cost resource="PUs" quantity="5"/>
+      <result resourceOrUnit="GatlingGun" quantity="1"/>
+    </productionRule>
+    <productionRule name="buySupply">
+      <cost resource="PUs" quantity="5"/>
+      <result resourceOrUnit="Supply" quantity="1"/>
+    </productionRule>
+    <productionFrontier name="ConfederacyFrontier">
+      <frontierRules name="buyInfantry"/>
+      <frontierRules name="buyEliteInfantry"/>
+      <frontierRules name="buyCavalry"/>
+      <frontierRules name="buyEliteCavalry"/>
+      <frontierRules name="buyOfficer"/>
+      <frontierRules name="buyGeneral"/>
+      <frontierRules name="buyArtillery"/>
+      <frontierRules name="buyMortar"/>
+      <frontierRules name="buyGatlingGun"/>
+      <frontierRules name="buySupply"/>
+    </productionFrontier>
+    <productionFrontier name="UnionFrontier">
+      <frontierRules name="buyInfantry"/>
+      <frontierRules name="buyEliteInfantry"/>
+      <frontierRules name="buyCavalry"/>
+      <frontierRules name="buyEliteCavalry"/>
+      <frontierRules name="buyOfficer"/>
+      <frontierRules name="buyGeneral"/>
+      <frontierRules name="buyArtillery"/>
+      <frontierRules name="buyMortar"/>
+      <frontierRules name="buyGatlingGun"/>
+      <frontierRules name="buySupply"/>
+    </productionFrontier>
+    <playerProduction player="Confederacy" frontier="ConfederacyFrontier"/>
+    <playerProduction player="Union" frontier="UnionFrontier"/>
+  </production>
+  <attatchmentList>
+    <attatchment name="unitAttatchment" attatchTo="Infantry" javaClass="games.strategy.triplea.attatchments.UnitAttachment" type="unitType">
+      <option name="movement" value="1"/>
+      <option name="transportCost" value="2"/>
+      <option name="attack" value="1"/>
+      <option name="defense" value="2"/>
+      <option name="artillerySupportable" value="true"/>
+    </attatchment>
+    <attatchment name="unitAttatchment" attatchTo="EliteInfantry" javaClass="games.strategy.triplea.attatchments.UnitAttachment" type="unitType">
+      <option name="movement" value="1"/>
+      <option name="transportCost" value="2"/>
+      <option name="attack" value="2"/>
+      <option name="defense" value="3"/>
+      <option name="artillerySupportable" value="true"/>
+    </attatchment>
+    <attatchment name="unitAttatchment" attatchTo="Cavalry" javaClass="games.strategy.triplea.attatchments.UnitAttachment" type="unitType">
+      <option name="movement" value="2"/>
+      <option name="transportCost" value="3"/>
+      <option name="canBlitz" value="true"/>
+      <option name="attack" value="1"/>
+      <option name="defense" value="1"/>
+    </attatchment>
+    <attatchment name="unitAttatchment" attatchTo="EliteCavalry" javaClass="games.strategy.triplea.attatchments.UnitAttachment" type="unitType">
+      <option name="movement" value="2"/>
+      <option name="transportCost" value="3"/>
+      <option name="canBlitz" value="true"/>
+      <option name="attack" value="2"/>
+      <option name="defense" value="2"/>
+    </attatchment>
+    <attatchment name="unitAttatchment" attatchTo="Officer" javaClass="games.strategy.triplea.attatchments.UnitAttachment" type="unitType">
+      <option name="movement" value="1"/>
+      <option name="transportCost" value="3"/>
+      <option name="attack" value="2"/>
+      <option name="defense" value="3"/>
+      <option name="artillery" value="true"/>
+    </attatchment>
+    <attatchment name="unitAttatchment" attatchTo="General" javaClass="games.strategy.triplea.attatchments.UnitAttachment" type="unitType">
+      <option name="movement" value="2"/>
+      <option name="transportCost" value="3"/>
+      <option name="attack" value="2"/>
+      <option name="defense" value="3"/>
+      <option name="artillery" value="true"/>
+      <option name="canBlitz" value="true"/>
+    </attatchment>
+    <attatchment name="unitAttatchment" attatchTo="Artillery" javaClass="games.strategy.triplea.attatchments.UnitAttachment" type="unitType">
+      <option name="movement" value="1"/>
+      <option name="attack" value="2"/>
+      <option name="defense" value="2"/>
+      <option name="transportCost" value="3"/>
+      <option name="artillery" value="true"/>
+    </attatchment>
+    <attatchment name="unitAttatchment" attatchTo="Mortar" javaClass="games.strategy.triplea.attatchments.UnitAttachment" type="unitType">
+      <option name="movement" value="1"/>
+      <option name="transportCost" value="3"/>
+      <option name="attack" value="4"/>
+      <option name="defense" value="2"/>
+      <option name="artillery" value="true"/>
+    </attatchment>
+    <attatchment name="unitAttatchment" attatchTo="Factory" javaClass="games.strategy.triplea.attatchments.UnitAttachment" type="unitType">
+      <option name="isFactory" value="true"/>
+    </attatchment>
+    <attatchment name="unitAttatchment" attatchTo="GatlingGun" javaClass="games.strategy.triplea.attatchments.UnitAttachment" type="unitType">
+      <option name="movement" value="1"/>
+      <option name="transportCost" value="2"/>
+      <option name="attack" value="1"/>
+      <option name="defense" value="4"/>
+    </attatchment>
+    <attatchment name="unitAttatchment" attatchTo="Steamtrain" javaClass="games.strategy.triplea.attatchments.UnitAttachment" type="unitType">
+      <option name="isAA" value="true"/>
+      <option name="attack" value="1"/>
+      <option name="transportCost" value="2"/>
+      <option name="movement" value="0"/>
+    </attatchment>
+    <attatchment name="unitAttatchment" attatchTo="Supply" javaClass="games.strategy.triplea.attatchments.UnitAttachment" type="unitType">
+      <option name="defense" value="2"/>
+      <option name="attack" value="1"/>
+      <option name="transportCost" value="3"/>
+      <option name="movement" value="2"/>
+      <option name="canBlitz" value="true"/>
+      <option name="artillery" value="true"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="City Point Harbor" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Hanover Roads" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Richmond Church Hill" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Lynchburg RR" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Hesterfield Church" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Fort Darling" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="2"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Petersburg" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="6"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Winstons Mill" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Swift Run" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Kinglands Creek" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Hanover RR" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Amherst" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Blunts Bridge" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Walnut Grove" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Bottoms Bridge" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Cumberland" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Lynchburg Fields" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Chickahominy River" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Richmond RR" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Farmsville" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Nine Mile Road" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Lynchburg" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="17"/>
+      <option name="capital" value="Confederacy"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Cendar Farm Bridge" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Appomattox Town" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="James River Ferry" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Anna River" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Petersburg RR" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="James River" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Hanover" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="3"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Stag Creek" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Richmond" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="4"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Hungary" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Three Notched Road" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Fair Oak" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Oakland" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Huskins" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Ashland" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Tomahawk Station" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Appomattox River" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Manchester" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="2"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Salem Church" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Putney Ferry" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Rose Garden" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Queens Creek" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Gaines Mill" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="White House RR" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="White House" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="19"/>
+      <option name="capital" value="Union"/>
+    </attatchment>
+    <attatchment name="territoryAttatchment" attatchTo="Tunstall Station" javaClass="games.strategy.triplea.attatchments.TerritoryAttachment" type="territory">
+      <option name="production" value="1"/>
+    </attatchment>
+  </attatchmentList>
+  <initialize>
+    <ownerInitialize>
+      <territoryOwner territory="City Point Harbor" owner="Confederacy"/>
+      <territoryOwner territory="Hanover Roads" owner="Confederacy"/>
+      <territoryOwner territory="Richmond Church Hill" owner="Confederacy"/>
+      <territoryOwner territory="Lynchburg RR" owner="Confederacy"/>
+      <territoryOwner territory="Hesterfield Church" owner="Confederacy"/>
+      <territoryOwner territory="Fort Darling" owner="Confederacy"/>
+      <territoryOwner territory="Petersburg" owner="Confederacy"/>
+      <territoryOwner territory="Winstons Mill" owner="Confederacy"/>
+      <territoryOwner territory="Swift Run" owner="Confederacy"/>
+      <territoryOwner territory="Kinglands Creek" owner="Confederacy"/>
+      <territoryOwner territory="Hanover RR" owner="Confederacy"/>
+      <territoryOwner territory="Amherst" owner="Confederacy"/>
+      <territoryOwner territory="Blunts Bridge" owner="Confederacy"/>
+      <territoryOwner territory="Walnut Grove" owner="Confederacy"/>
+      <territoryOwner territory="Bottoms Bridge" owner="Confederacy"/>
+      <territoryOwner territory="Cumberland" owner="Confederacy"/>
+      <territoryOwner territory="Lynchburg Fields" owner="Confederacy"/>
+      <territoryOwner territory="Richmond RR" owner="Confederacy"/>
+      <territoryOwner territory="Farmsville" owner="Confederacy"/>
+      <territoryOwner territory="Nine Mile Road" owner="Confederacy"/>
+      <territoryOwner territory="Lynchburg" owner="Confederacy"/>
+      <territoryOwner territory="Cendar Farm Bridge" owner="Confederacy"/>
+      <territoryOwner territory="Appomattox Town" owner="Confederacy"/>
+      <territoryOwner territory="James River Ferry" owner="Confederacy"/>
+      <territoryOwner territory="Anna River" owner="Confederacy"/>
+      <territoryOwner territory="Petersburg RR" owner="Confederacy"/>
+      <territoryOwner territory="James River" owner="Confederacy"/>
+      <territoryOwner territory="Hanover" owner="Confederacy"/>
+      <territoryOwner territory="Stag Creek" owner="Confederacy"/>
+      <territoryOwner territory="Richmond" owner="Confederacy"/>
+      <territoryOwner territory="Hungary" owner="Confederacy"/>
+      <territoryOwner territory="Three Notched Road" owner="Confederacy"/>
+      <territoryOwner territory="Fair Oak" owner="Confederacy"/>
+      <territoryOwner territory="Oakland" owner="Confederacy"/>
+      <territoryOwner territory="Huskins" owner="Confederacy"/>
+      <territoryOwner territory="Ashland" owner="Confederacy"/>
+      <territoryOwner territory="Tomahawk Station" owner="Confederacy"/>
+      <territoryOwner territory="Appomattox River" owner="Confederacy"/>
+      <territoryOwner territory="Manchester" owner="Confederacy"/>
+      <territoryOwner territory="Salem Church" owner="Union"/>
+      <territoryOwner territory="Putney Ferry" owner="Union"/>
+      <territoryOwner territory="Rose Garden" owner="Union"/>
+      <territoryOwner territory="Queens Creek" owner="Union"/>
+      <territoryOwner territory="Gaines Mill" owner="Union"/>
+      <territoryOwner territory="White House RR" owner="Union"/>
+      <territoryOwner territory="Chickahominy River" owner="Union"/>
+      <territoryOwner territory="White House" owner="Union"/>
+      <territoryOwner territory="Tunstall Station" owner="Union"/>
+    </ownerInitialize>
+    <unitInitialize>
+      <unitPlacement unitType="Steamtrain" territory="Lynchburg RR" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Steamtrain" territory="Hanover RR" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Steamtrain" territory="Richmond RR" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Lynchburg" quantity="3" owner="Confederacy"/>
+      <unitPlacement unitType="EliteInfantry" territory="Lynchburg" quantity="2" owner="Confederacy"/>
+      <unitPlacement unitType="Cavalry" territory="Lynchburg" quantity="2" owner="Confederacy"/>
+      <unitPlacement unitType="Officer" territory="Lynchburg" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Artillery" territory="Lynchburg" quantity="2" owner="Confederacy"/>
+      <unitPlacement unitType="Supply" territory="Lynchburg" quantity="2" owner="Confederacy"/>
+      <unitPlacement unitType="EliteCavalry" territory="Lynchburg" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Factory" territory="Lynchburg" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Steamtrain" territory="Petersburg RR" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Steamtrain" territory="White House RR" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Infantry" territory="White House" quantity="20" owner="Union"/>
+      <unitPlacement unitType="Factory" territory="White House" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Infantry" territory="White House RR" quantity="3" owner="Union"/>
+      <unitPlacement unitType="EliteInfantry" territory="White House RR" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Cavalry" territory="White House RR" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Officer" territory="White House RR" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Artillery" territory="White House RR" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Supply" territory="White House RR" quantity="1" owner="Union"/>
+      <unitPlacement unitType="EliteInfantry" territory="White House" quantity="4" owner="Union"/>
+      <unitPlacement unitType="Cavalry" territory="White House" quantity="1" owner="Union"/>
+      <unitPlacement unitType="EliteCavalry" territory="White House" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Officer" territory="White House" quantity="1" owner="Union"/>
+      <unitPlacement unitType="General" territory="White House" quantity="2" owner="Union"/>
+      <unitPlacement unitType="Artillery" territory="White House" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Mortar" territory="White House" quantity="1" owner="Union"/>
+      <unitPlacement unitType="GatlingGun" territory="White House" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Supply" territory="White House" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Infantry" territory="Rose Garden" quantity="3" owner="Union"/>
+      <unitPlacement unitType="Cavalry" territory="Rose Garden" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Artillery" territory="Rose Garden" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Infantry" territory="Tunstall Station" quantity="13" owner="Union"/>
+      <unitPlacement unitType="Cavalry" territory="Tunstall Station" quantity="3" owner="Union"/>
+      <unitPlacement unitType="Artillery" territory="Tunstall Station" quantity="4" owner="Union"/>
+      <unitPlacement unitType="Infantry" territory="Putney Ferry" quantity="4" owner="Union"/>
+      <unitPlacement unitType="Cavalry" territory="Putney Ferry" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Artillery" territory="Putney Ferry" quantity="2" owner="Union"/>
+      <unitPlacement unitType="Officer" territory="Salem Church" quantity="2" owner="Union"/>
+      <unitPlacement unitType="Infantry" territory="Salem Church" quantity="3" owner="Union"/>
+      <unitPlacement unitType="Infantry" territory="Queens Creek" quantity="7" owner="Union"/>
+      <unitPlacement unitType="Cavalry" territory="Queens Creek" quantity="2" owner="Union"/>
+      <unitPlacement unitType="Artillery" territory="Queens Creek" quantity="3" owner="Union"/>
+      <unitPlacement unitType="Infantry" territory="Gaines Mill" quantity="3" owner="Union"/>
+      <unitPlacement unitType="Cavalry" territory="Gaines Mill" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Artillery" territory="Gaines Mill" quantity="1" owner="Union"/>
+      <unitPlacement unitType="Infantry" territory="Chickahominy River" quantity="3" owner="Union"/>
+      <unitPlacement unitType="Infantry" territory="Manchester" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Artillery" territory="Manchester" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Artillery" territory="Tomahawk Station" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Artillery" territory="Richmond" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Artillery" territory="Richmond RR" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Artillery" territory="Lynchburg RR" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Artillery" territory="Hanover" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Artillery" territory="James River" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Artillery" territory="Petersburg" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Artillery" territory="Richmond Church Hill" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Richmond" quantity="2" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Appomattox River" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Tomahawk Station" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Ashland" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Huskins" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Oakland" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Fair Oak" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Three Notched Road" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Hungary" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Supply" territory="Richmond" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="EliteInfantry" territory="Richmond" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Officer" territory="Richmond" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Stag Creek" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="EliteInfantry" territory="Hanover" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Hanover" quantity="2" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="James River" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Petersburg RR" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Anna River" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="James River Ferry" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Appomattox Town" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Cendar Farm Bridge" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Nine Mile Road" quantity="2" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Farmsville" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Richmond RR" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Lynchburg Fields" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Cumberland" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Bottoms Bridge" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Walnut Grove" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Blunts Bridge" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Amherst" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Hanover RR" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Kinglands Creek" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Swift Run" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Winstons Mill" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="EliteCavalry" territory="Winstons Mill" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Petersburg" quantity="5" owner="Confederacy"/>
+      <unitPlacement unitType="EliteInfantry" territory="Petersburg" quantity="2" owner="Confederacy"/>
+      <unitPlacement unitType="EliteInfantry" territory="Fort Darling" quantity="3" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Hesterfield Church" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Lynchburg RR" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Richmond Church Hill" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Hanover Roads" quantity="2" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="City Point Harbor" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Infantry" territory="Fort Darling" quantity="5" owner="Confederacy"/>
+      <unitPlacement unitType="EliteCavalry" territory="Fort Darling" quantity="1" owner="Confederacy"/>
+      <unitPlacement unitType="Artillery" territory="Fort Darling" quantity="2" owner="Confederacy"/>
+    </unitInitialize>
+    <resourceInitialize>
+      <resourceGiven player="Confederacy" resource="PUs" quantity="34"/>
+      <resourceGiven player="Union" resource="PUs" quantity="41"/>
+    </resourceInitialize>
+  </initialize>
+  <propertyList>
+    <property name="Low Luck" value="false" editable="true">
+      <boolean/>
+    </property>
+    <property name="Confederacy bid" value="0" editable="true">
+      <number min="0" max="1000"/>
+    </property>
+    <property name="Union bid" value="0" editable="true">
+      <number min="0" max="1000"/>
+    </property>
+    <property name="WW2V2" value="true" editable="false">
+      <boolean/>
+    </property>
+    <!--                <property name="neutralCharge" value="9999999" editable="false"/>-->
+    <property name="mapName" value="peninsula_campaign" editable="false"/>
+    <property name="notes">
+      <value><![CDATA[
+					Civil War Peninsula Campaign
+					By Aka
+		        	]]></value>
+    </property>
+  </propertyList>
+</game>
