@@ -1,0 +1,3 @@
+map_name: peninsula_campaign
+games:
+- {game_name: Peninsula_Campaign, file_name: Peninsula_Campaign.xml}
